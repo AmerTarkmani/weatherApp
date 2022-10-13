@@ -77,7 +77,7 @@ button:hover {
 
 .weather.loading:after {
     visibility: visible;
-    content: "One sec...";
+    content: "Type in a city!";
     color: white;
     position: absolute;
     top: 0;
