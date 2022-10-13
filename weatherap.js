@@ -14,12 +14,12 @@ let weather = { apiKey: "f8c51e7c3128b1c610e81a0eaa94f01a",
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        document.querySelector(".city").innerText = "weather in " + name;
+        document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".description").innerText = description
         document.querySelector(".temp").innerText = temp + "°C"
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/"+ icon + ".png" 
-        document.querySelector(".humidity").innerText = "humidity: " + humidity + "%"
-        document.querySelector(".wind").innerText = "Wind speed" + speed + "km/h"
+        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%"
+        document.querySelector(".wind").innerText = "Wind Speed " + speed + "km/h"
         document.querySelector(".weather").classList.remove("loading");
         //removes loading when city is being searched
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
