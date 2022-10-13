@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    background: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://source.unsplash.com/1600x900/?");
+    
+}
+
+.view {
+    background: #111111d1;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20%;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -10px;
+    padding: 10px;
+    height: 40px;
+}
+
+input.search-box {
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+    border-radius: 10%;
+    font-family: inherit;
+    background: #8d8d8d8d;
+    color: white;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    margin: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.temp { 
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.description { 
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    position: relative;
+    max-height: 15px;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "One sec...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
